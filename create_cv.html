@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mẫu CV 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .navbar {
+      background-color: #05788c;
+    }
+
+    .navbar a {
+      color: white !important;
+      font-weight: bold;
+    }
+    .btn-login {
+      background-color: #00c260;
+      color: white;
+    }
+    .btn-register {
+      background-color: #00b38f;
+      color: white;
+    }
+
+    .btn-post {
+      background-color: #ffd43b;
+      color: black;
+    }
+    .cv-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: white;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+    .cv-card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    .cv-card img {
+      width: 100%;
+      height: auto;
+    }
+    .cv-tags span {
+      font-size: 12px;
+      background-color: #f1f1f1;
+      padding: 2px 6px;
+      border-radius: 10px;
+      margin-right: 4px;
+    }
+    .cv-title {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .filter-bar select {
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tên trang web</a>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="job.html">Việc làm</a></li>
+                  <li class="nav-item"><a class="nav-link" href="create_cv.html">Tạo CV</a></li>
+                </ul>
+                <div class="d-flex">
+                  <button class="btn btn-login me-2">
+                    <a class="nav-link" href="login.html">Đăng nhập</a>
+                  </button>
+                  <button class="btn btn-register me-2">
+                    <a class="nav-link" href="signup.html">Đăng ký</a>
+                  </button>
+                  <button class="btn btn-post">
+                    <a class="nav-link" href="login.html">Đăng tin</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </nav>
+<div class="container py-5">
+  <h2 class="fw-bold">Mẫu CV xin việc tiếng Việt, Anh, Nhật chuẩn 2025</h2>
+  <p class="text-muted">
+    Tạo CV cho riêng bạn
+  </p>
+
+  <!-- Bộ lọc -->
+  <div class="d-flex gap-3 my-3 filter-bar">
+    <select class="form-select">
+      <option selected>Tiếng Việt</option>
+      <option>English</option>
+      <option>日本語</option>
+    </select>
+    <select class="form-select">
+      <option selected>Tất cả thiết kế</option>
+      <option>Chuyên nghiệp</option>
+      <option>Thanh lịch</option>
+    </select>
+    <div class="form-check ms-auto">
+      <input class="form-check-input" type="radio" name="popular" id="updated">
+      <label class="form-check-label" for="updated">Mới cập nhật</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="popular" id="mostUsed" checked>
+      <label class="form-check-label" for="mostUsed">Được dùng nhiều nhất</label>
+    </div>
+  </div>
+
+  <!-- Danh sách mẫu CV -->
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="cv-card">
+        <img src="assets/pro_cv.webp" alt="CV 1">
+        <div class="p-3">
+          <div class="cv-tags mb-1">
+            <span class="text-muted">Thanh lịch</span>
+            <span>1 trang</span>
+            <span>+8</span>
+          </div>
+          <div class="cv-title">Chuyên Nghiệp 1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="cv-card">
+        <img src="assets/idk.jpg" alt="CV 2">
+        <div class="p-3">
+          <div class="cv-tags mb-1">
+            <span>Kinh nghiệm</span>
+            <span>Chuyên nghiệp</span>
+            <span>+9</span>
+          </div>
+          <div class="cv-title">Tham vọng</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="cv-card">
+        <img src="assets/pro_cv_2.svg" alt="CV 3">
+        <div class="p-3">
+          <div class="cv-tags mb-1">
+            <span>Không ảnh</span>
+            <span>Chuyên nghiệp</span>
+            <span>+9</span>
+          </div>
+          <div class="cv-title">Chuyên gia</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
